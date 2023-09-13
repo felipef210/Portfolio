@@ -1,0 +1,115 @@
+/*Formatações Gerais*/
+*{
+    margin: 0;
+}
+.nav-bar{
+    list-style: none;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-bar li{
+    display: inline-block;
+    margin: 0.5% 3%;
+    text-align: center;
+    transition: 0.5s;
+}
+.barra{
+    background-color: white;
+    color: white;
+    width: 0px;
+    height: 3px;
+    animation: aumentarBarra 1.5s ease-in-out forwards;
+}
+@keyframes aumentarBarra {
+    0% {
+        width: 0; /* No início, a largura é zero */
+    }
+    100% {
+        width: 100%; /* No final, a largura é 100% */
+    }
+}
+.nav-bar li:hover{
+    scale: 1.2;
+}
+.nav-bar li i{
+    display: block;
+    margin: 5%;
+}
+.nav-bar li a{
+    color: white;
+    text-decoration: none;
+}
+.cabecalho{
+    margin: 7% 0% 3% 5%;
+}
+.cabecalho>.titulo{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rodape{
+    background-color: black;
+    text-align: center;
+    margin-top: 2%;
+    padding: 1%;
+    width: 100%;
+}
+.rodape p{
+    color: white;
+}
+/*Fim Formatações Gerais*/
+
+/*Formatações Home*/
+.container figure{
+    width: 50%;
+    margin-left: 10%;
+    text-align: end;
+}
+.container figure img{
+    width: 50%;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+.container figure img:hover{
+    scale: 1.1;
+}
+.container article{
+    width: 50%;
+    margin: 0 10% 0 5%;
+}
+/*Fim Formatações Home*/
+
+/*Página Contatos*/
+.redes-sociais{
+    display: flex;
+    width: 50%;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+.redes-sociais a{
+    scale: 5;
+    margin: 10%;
+}
+.formulario{
+    display: flex;
+    width: 50%;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+}
+.campos input, .campos textarea, .campos button{
+    margin: 5%;
+}
+
+/*Fim Formatações Contatos*/
