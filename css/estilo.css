@@ -2,6 +2,9 @@
 *{
     margin: 0;
 }
+body{
+    background-color: #fafafa;
+}
 .nav-bar{
     list-style: none;
     background-color: black;
@@ -14,6 +17,17 @@
     margin: 0.5% 3%;
     text-align: center;
     transition: 0.5s;
+}
+.nav-bar li:hover{
+    scale: 1.2;
+}
+.nav-bar li i{
+    display: block;
+    margin: 5%;
+}
+.nav-bar li a{
+    color: white;
+    text-decoration: none;
 }
 .barra{
     background-color: white;
@@ -30,17 +44,6 @@
         width: 100%; /* No final, a largura é 100% */
     }
 }
-.nav-bar li:hover{
-    scale: 1.2;
-}
-.nav-bar li i{
-    display: block;
-    margin: 5%;
-}
-.nav-bar li a{
-    color: white;
-    text-decoration: none;
-}
 .cabecalho{
     margin: 7% 0% 3% 5%;
 }
@@ -54,7 +57,9 @@
 }
 .rodape{
     background-color: black;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 2%;
     padding: 1%;
     width: 100%;
@@ -85,31 +90,84 @@
 /*Fim Formatações Home*/
 
 /*Página Contatos*/
+.rodape-contatos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    padding: 1%;
+    width: 100%;
+    margin-top: 5%;
+}
+.rodape-contatos p{
+    color: white;
+}
 .redes-sociais{
     display: flex;
     width: 50%;
-    margin-top: 5%;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 .redes-sociais a{
-    scale: 5;
-    margin: 10%;
+    font-size: 5em;
+    margin: 2% 5%;
+    transition: 0.5s;
+}
+.redes-sociais a:hover{
+    scale: 1.2;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
 }
 .formulario{
     display: flex;
     width: 50%;
     margin-top: 5%;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 .campos{
     display: flex;
     flex-direction: column;
-}
-.campos input, .campos textarea, .campos button{
-    margin: 5%;
+    border-radius: 10px;
+    border: solid black 2px
 }
 
+.campos button{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.campos textarea{
+    height: 100px;
+    border-radius: 5px;
+}
+.campos input, .campos textarea{
+    background-color: #fefefe;
+    border: solid black 2px
+}
+.campos input, .campos textarea, .campos button{
+    margin: 2%;
+}
+#nome, #email{
+    height: 25px;
+    padding-left: 35px;
+    border-radius: 5px;
+}
+#nome{
+    background-image: url("../assets/icone-usuario.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 7px;
+}
+#email{
+    background-image: url("../assets/email.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
 /*Fim Formatações Contatos*/
