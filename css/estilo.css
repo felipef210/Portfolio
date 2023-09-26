@@ -3,11 +3,13 @@
     margin: 0;
 }
 body{
+    font-family: Arial, sans-serif;
     background-color: #fafafa;
+    color: #202020;
 }
 .nav-bar{
     list-style: none;
-    background-color: black;
+    background-color: #000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -45,7 +47,8 @@ body{
     }
 }
 .cabecalho{
-    margin: 7% 0% 3% 5%;
+    margin: 7% 5% 3% 5%;
+    color: #101010;
 }
 .cabecalho>.titulo{
     text-align: center;
@@ -54,9 +57,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .rodape{
-    background-color: black;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,24 +75,46 @@ body{
 /*Fim Formatações Gerais*/
 
 /*Formatações Home*/
-.container figure{
-    width: 50%;
-    margin-left: 10%;
-    text-align: end;
-}
-.container figure img{
-    width: 50%;
+
+.container img{
+    text-align: center;
+    width: 30%;
     border-radius: 5%;
     transition: 0.5s;
 }
-.container figure img:hover{
-    scale: 1.1;
+.container img:hover{
+    scale: 1.05;
 }
 .container article{
-    width: 50%;
-    margin: 0 10% 0 5%;
+    margin-left: 5%;
 }
 /*Fim Formatações Home*/
+
+/*Página Formação*/
+.carousel-container {
+    margin: 5% 0% 10% 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    scale: 1.1;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 30%;
+    height: auto;
+    border: solid 3px red;
+}
+/*Fim Formatações Formação*/
 
 /*Página Contatos*/
 .rodape-contatos{
