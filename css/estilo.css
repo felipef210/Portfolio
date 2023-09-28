@@ -1,8 +1,13 @@
 /*Formatações Gerais*/
 *{
     margin: 0;
+    padding: 0;
 }
 body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #fafafa;
     color: #202020;
@@ -10,8 +15,6 @@ body{
 .nav-bar{
     list-style: none;
     background-color: #000;
-    position: fixed;
-    top: 0;
     width: 100%;
 }
 .nav-bar li{
@@ -35,7 +38,7 @@ body{
     background-color: white;
     color: white;
     width: 0px;
-    height: 3px;
+    height: 0.2em;
     animation: aumentarBarra 1.5s ease-in-out forwards;
 }
 @keyframes aumentarBarra {
@@ -47,7 +50,7 @@ body{
     }
 }
 .cabecalho{
-    margin: 7% 5% 3% 5%;
+    margin: 1% 5% 1% 5%;
     color: #101010;
 }
 .cabecalho>.titulo{
@@ -55,6 +58,7 @@ body{
 }
 .container{
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 15%;
@@ -62,12 +66,9 @@ body{
 }
 .rodape{
     background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-    padding: 1%;
-    width: 100%;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
 }
 .rodape p{
     color: white;
@@ -92,8 +93,9 @@ body{
 
 /*Página Formação*/
 .carousel-container {
-    margin: 5% 0% 10% 8%;
+    margin: 5% 0% 5% 8%;
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
@@ -122,22 +124,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2%;
-    padding: 1%;
+    padding-top: 1%;
     width: 100%;
-    margin-top: 5%;
 }
 .rodape-contatos p{
     color: white;
+    padding: 1% 0;
 }
 .redes-sociais{
     display: flex;
-    width: 50%;
     justify-content: center;
 }
 .redes-sociais a{
-    font-size: 5em;
-    margin: 2% 5%;
+    font-size: 4.2em;
+    margin: 1% 10%;
     transition: 0.5s;
 }
 .redes-sociais a:hover{
@@ -145,12 +145,14 @@ body{
 }
 .conteudo{
     display: flex;
+    flex: 1;
     justify-content: center;
+    margin: 0 15%;
 }
 .formulario{
     display: flex;
     width: 50%;
-    margin-top: 5%;
+    margin-top: 2%;
     flex-direction: column;
     text-align: center;
 }
