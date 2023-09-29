@@ -88,12 +88,13 @@ body{
 }
 .container article{
     margin-left: 5%;
+    text-align: justify;
 }
 /*Fim Formatações Home*/
 
 /*Página Formação*/
 .carousel-container {
-    margin: 5% 0% 5% 8%;
+    margin: 3% 0% 0% 8%;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -102,6 +103,8 @@ body{
 
 .carousel {
     display: flex;
+    margin-left: 1.5%;
+    margin-top: -10%;
     transition: transform 0.5s ease;
     align-items: center;
     scale: 1.1;
@@ -160,7 +163,9 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: solid black 2px
+    border: solid black 2px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .campos button{
@@ -172,8 +177,9 @@ body{
     cursor: pointer;
 }
 .campos textarea{
-    height: 100px;
+    height: 200px;
     border-radius: 5px;
+    resize: none;
 }
 .campos input, .campos textarea{
     background-color: #fefefe;
@@ -183,7 +189,7 @@ body{
     margin: 2%;
 }
 #nome, #email{
-    height: 25px;
+    height: 30px;
     padding-left: 35px;
     border-radius: 5px;
 }
