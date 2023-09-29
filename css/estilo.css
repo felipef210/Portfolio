@@ -122,6 +122,32 @@ body{
 /*Fim Formatações Formação*/
 
 /*Página Contatos*/
+.sucesso>.campos{
+    margin: 7% 35%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.sucesso>.cabecalho{
+    text-align: center;
+}
+.sucesso>.campos p{
+    margin-top: 5%;
+    text-align: center;
+}
+.sucesso>.campos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    text-decoration: none;
+}
 .rodape-contatos{
     background-color: black;
     display: flex;
@@ -161,6 +187,7 @@ body{
 }
 .campos{
     display: flex;
+    flex: 1;
     flex-direction: column;
     border-radius: 10px;
     border: solid black 2px;
