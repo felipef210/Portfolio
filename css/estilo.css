@@ -14,12 +14,10 @@ body{
     color: #202020;
 }
 .nav-bar{
+    text-align: center;
     list-style: none;
     background-color: #000;
     width: 100%;
-}
-.nav-bar{
-    text-align: left;
 }
 .nav-bar li{
     display: inline-block;
@@ -255,9 +253,6 @@ form{
     html{
         font-size: 0.9em;
     }
-    .nav-bar{
-        text-align: center;
-    }
     .home>.cabecalho{
         margin: 5% 5% 5% 5%;
     }
@@ -358,9 +353,6 @@ form{
     }
 }
 @media (max-width: 767){
-    .nav-bar{
-        text-align: left;
-    }
     .container{
         display: flex;
         flex: 1;
