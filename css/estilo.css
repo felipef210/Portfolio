@@ -221,8 +221,6 @@ form{
     background-position-y: center;
     background-position-x: 5px;
 }
-/*Fim Formatações Contatos*/
-
 .rodape-contatos{
     background-color: black;
     display: flex;
@@ -247,6 +245,7 @@ form{
 .redes-sociais a:hover{
     scale: 1.2;
 }
+/*Fim Formatações Contatos*/
 
 /*Media Queries*/
 @media (max-width: 323px){
