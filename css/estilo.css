@@ -173,7 +173,7 @@ body{
     background-color: #000;
     color: black;
 }
-.secao-download{
+.sessao-download{
     width: 50%;
     height: 650px;
     display: flex;
@@ -181,7 +181,7 @@ body{
     align-items: center;
     gap: 28vh;
 }
-.secao-download h1{
+.sessao-download h1{
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -335,10 +335,10 @@ form{
 /*Media Queries*/
 @media (max-width: 323px){
     html{
-        font-size: 0.9em;
+        font-size: 0.6em;
     }
     .home>.cabecalho{
-        margin: 5% 5% 5% 5%;
+        margin: 5% 5% -25% 5%;
     }
     .home>.cabecalho h1, .home>.cabecalho h3{
         width: 100%;
@@ -347,10 +347,10 @@ form{
         display: flex;
         flex: 1;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 5%;
     }
     .container article{
         text-align: justify;
@@ -368,6 +368,43 @@ form{
     }
     .cabecalho{
         text-align: center;
+        margin-bottom: 5%;
+    }
+    .container-pagina{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+    .sessao-certificados{
+        width: 90%;
+        height: 400px;
+        align-items: center;
+    }
+    .manual-navigation{
+        margin-top: -40%;
+    }
+    .titulo-certificado{
+        width: 100%;
+        font-size: 25px;
+    }
+    .sessao-download{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .btn-download{
+        width: 70%;
+        padding: 25px 20px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .titulo-experiencia{
+        width: 100%;
+        font-size: 25px;
         margin-bottom: 5%;
     }
     article{
@@ -391,7 +428,7 @@ form{
 }
 @media (min-width: 324px) and (max-width: 480px){
     html{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .nav-bar{
         text-align: center;
@@ -424,6 +461,42 @@ form{
         margin-bottom: 5%;
         border-radius: 5%;
         transition: 0.5s;
+    }
+    .container-pagina{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+    .sessao-certificados{
+        width: 90%;
+        height: 400px;
+        align-items: center;
+    }
+    .manual-navigation{
+        margin-top: -40%;
+    }
+    .titulo-certificado{
+        width: 100%;
+        font-size: 25px;
+    }
+    .sessao-download{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .btn-download{
+        width: 70%;
+        padding: 25px 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .titulo-experiencia{
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 5%;
     }
     .cabecalho{
         text-align: center;
