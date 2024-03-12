@@ -105,29 +105,37 @@ body{
 /*Página Formação*/
 .certificados>.cabecalho{
     margin-bottom: 2%;
-    margin-left: 15%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
 }
 .container-pagina{
     display: flex;
     flex: 1;
+    justify-content: space-between;
 }
 .slider{
-    margin: 0 5%;
+    margin: 0 5% 2% 5%;
     width: 40%;
     height: 500px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .slides{
     width: 400%;
-    height: auto;
+    height: 100%;
     display: flex;
 }
 .slides input{
     display: none;
 }
-.slide{
-    width: 25%;
-    position: relative;
+.slide {
+    position: absolute; /* Posição absoluta para empilhar os slides uns sobre os outros */
+    transition: transform 1s ease; /* Transição suave do slide */
+}
+.slides {
+    position: relative; /* Necessário para posicionar os slides */
+    width: 100%; /* Garante que os slides ocupem toda a largura do contêiner */
+    /* Esconde slides fora da tela */
 }
 .slide img{
     width: 100%;
@@ -135,10 +143,11 @@ body{
 }
 .manual-navigation{
     position: absolute;
-    width: 40%;
-    margin-top: 480px;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-self: center;
+    margin-top: 55%;
 }
 .manual-btn{
     border: 2px solid black;
@@ -151,12 +160,28 @@ body{
 .manual-btn:not(:last-child){
     margin-right: 10px;
 }
-.manual-btn:hover{
-    background-color: #000;
-}
 .manual-btn.active {
     background-color: #000;
     color: black;
+}
+.secao-download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 16%;
+}
+.btn-download{
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 30px 50px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    transition: 1s;
+}
+.btn-download:hover{
+    scale: 1.2;
 }
 /*Fim Formatações Formação*/
 
