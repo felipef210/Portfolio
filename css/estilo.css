@@ -103,31 +103,60 @@ body{
 /*Fim Formatações Home*/
 
 /*Página Formação*/
-.carousel-container {
-    margin: 3% 0% 0% 8%;
+.certificados>.cabecalho{
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+.container-pagina{
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
 }
-
-.carousel {
-    display: flex;
-    margin-left: 1.5%;
-    margin-top: -10%;
-    transition: transform 0.5s ease;
-    align-items: center;
-    scale: 1.1;
+.slider{
+    margin: 0 5%;
+    width: 40%;
+    height: 500px;
+    overflow: hidden;
 }
-
-.carousel-slide {
-    min-width: 100%;
-}
-
-.carousel img {
-    width: 30%;
+.slides{
+    width: 400%;
     height: auto;
-    border: solid 3px red;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+}
+.manual-navigation{
+    position: absolute;
+    width: 40%;
+    margin-top: 480px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.manual-btn:hover{
+    background-color: #000;
+}
+.manual-btn.active {
+    background-color: #000;
+    color: black;
 }
 /*Fim Formatações Formação*/
 
@@ -138,25 +167,37 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .sucesso>.cabecalho{
     text-align: center;
+    margin-bottom: 0;
 }
 .sucesso>.campos p{
-    margin-top: 5%;
     text-align: center;
 }
 .sucesso>.campos a{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 30%;
+    align-items: flex-end;
+    font-size: 1.1em;
+    width: 20%;
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 2%;
     text-decoration: none;
+}
+.sucesso>.rodape-contatos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+}
+.sucesso>.rodape-contatos p{
+    color: white;
+    font-size: 1.1em;
 }
 .conteudo{
     display: flex;
@@ -297,6 +338,12 @@ form{
     form{
         width: 100%;
     }
+    .sucesso>.campos{
+        margin: 20% 10%;
+    }
+    .sucesso>.campos p{
+        margin: 10%;
+    }
 }
 @media (min-width: 324px) and (max-width: 480px){
     html{
@@ -350,8 +397,14 @@ form{
     form{
         width: 100%;
     }
+    .sucesso>.campos{
+        margin: 20% 10%;
+    }
+    .sucesso>.campos p{
+        margin: 10%;
+    }
 }
-@media (max-width: 767){
+@media (min-width: 481px) and (max-width: 767px){
     .container{
         display: flex;
         flex: 1;
@@ -369,5 +422,11 @@ form{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .sucesso>.campos{
+        margin: 20% 10%;
+    }
+    .sucesso>.campos p{
+        margin: 10%;
     }
 }
