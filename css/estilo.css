@@ -200,7 +200,7 @@ body{
 }
 .btn-download:hover{
     color: white;
-    filter: brightness(150%);
+    filter: brightness(200%);
 }
 /*Fim Formatações Formação*/
 
@@ -279,6 +279,7 @@ form{
 }
 .campos textarea{
     height: 200px;
+    padding: 5px;
     border-radius: 5px;
     resize: none;
 }
