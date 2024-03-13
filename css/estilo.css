@@ -550,6 +550,9 @@ form{
         margin-right: 5%;
         margin-bottom: 5%;
     }
+    .container article{
+        margin-left: 0;
+    }
     .container img{
         width: 40%;
         margin-bottom: 5%;
@@ -558,6 +561,45 @@ form{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .container-pagina{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+    }
+    .sessao-certificados{
+        width: 100%;
+        height: 320px;
+        align-items: center;
+    }
+    .manual-navigation{
+        margin-top: -40%;
+    }
+    .titulo-certificado{
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+    .sessao-download{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .btn-download{
+        width: 70%;
+        padding: 15px 10px;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+    .titulo-experiencia{
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+        margin-bottom: 5%;
     }
     .sucesso>.campos{
         margin: 20% 10%;
