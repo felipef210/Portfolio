@@ -524,6 +524,13 @@ form{
     form{
         width: 100%;
     }
+    h2{
+        margin: 3% 0;
+    }
+    .card{
+        flex-basis: 90%;
+        margin-bottom: 5%;
+    }
     .sucesso>.campos{
         margin: 20% 10%;
     }
@@ -629,6 +636,14 @@ form{
     form{
         width: 100%;
     }
+    h2{
+        margin: 3% 0;
+    }
+    .card{
+        flex-basis: 75%;
+        margin-bottom: 5%;
+    }
+    
     .sucesso>.campos{
         margin: 20% 10%;
     }
@@ -696,6 +711,9 @@ form{
         height: auto;
         font-size: 25px;
         margin-bottom: 5%;
+    }
+    .card{
+        flex-basis: 45%;
     }
     .sucesso>.campos{
         margin: 20% 10%;
