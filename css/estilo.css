@@ -203,6 +203,60 @@ body{
 }
 /*Fim Formatações Formação*/
 
+/*Página Projetos*/
+.projetos{
+    display: flex;
+    flex: 1;
+    margin: 1% 5%;
+    flex-direction: column;
+}
+.projetos>h2{
+    width: 100%;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    text-align: center;
+    margin: 1%;
+    border: 3px solid black;
+    border-radius: 3%;
+}
+.card img{
+    width: 90%;
+    height: 100px;
+    margin: 4% 5%;
+}
+.conteudo-projeto{
+    border-top: 3px solid black;
+}
+.descricao-projeto{
+    margin: 5%;
+    text-align:left
+}
+.btn-projeto{
+    width: 50%;
+    font-size: 17px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 4% 2%;
+    color: black;
+    margin: 5% 0;
+    border-radius: 10px;
+    transition: 0.75s;
+}
+.btn-projeto:hover{
+    background-color: black;
+    color: white;
+}
+/*Fim Formatações Projetos*/
+
 /*Página Contatos*/
 .sucesso>.campos{
     margin: 7% 35%;
