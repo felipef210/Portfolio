@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="assets/f.png" type="icon">
 </head>
-<body>
+<body id="pagina">
     <nav>
         <ul class="nav-bar">
             <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
@@ -17,6 +17,32 @@
             <li><a href="contatos.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
         </ul>
     </nav>
+
+    <div id="modal-overlay">
+        <dialog class="modal" id="modal1">
+            <div class="topo">
+                <div style="background-color: white; width: 5%;"></div>
+                <h2>Teste</h2>
+                <button class="btn-close">X</button>
+            </div>
+            
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim temporibus aliquam tempora molestiae aliquid eaque animi doloribus eum, necessitatibus incidunt eos accusamus? Doloremque, nobis sint? Soluta vitae excepturi iure nulla!
+            </p>
+        </dialog>
+
+        <dialog class="modal" id="modal2">
+            <div class="topo">
+                <div style="background-color: white; width: 5%;"></div>
+                <h2>Teste</h2>
+                <button class="btn-close">X</button>
+            </div>
+            
+            <p>
+                Tua tia pelada
+            </p>
+        </dialog>
+    </div>
     <section class="projetos">
         <h2>Projetos</h2>
         <div class="cards">
@@ -30,7 +56,7 @@
                     <p class="descricao-projeto">
                         <b>Descrição:</b> É uma calculadora de relação Sinal/Ruído, onde o usuário pode inserir o valor em qualquer unidade disponibilizada e o sistema realizará a conversão para a unidade padrão (dBm).
                     </p>
-                    <button class="btn-projeto"><b>SAIBA MAIS</b></button>
+                    <button id="btn-sinal" class="btn-projeto"><b>SAIBA MAIS</b></button>
                 </div>
             </div>
 
@@ -44,7 +70,7 @@
                     <p class="descricao-projeto">
                         <b>Descrição:</b> É uma calculadora de relação Sinal/Ruído, onde o usuário pode inserir o valor em qualquer unidade disponibilizada e o sistema realizará a conversão para a unidade padrão (dBm).
                     </p>
-                    <button class="btn-projeto"><b>SAIBA MAIS</b></button>
+                    <button id="teste" class="btn-projeto"><b>SAIBA MAIS</b></button>
                 </div>
             </div>
 
@@ -72,5 +98,6 @@
         </section>
         <p>Todos os direitos reservados &copy; 2023</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
