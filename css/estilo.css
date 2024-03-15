@@ -596,6 +596,20 @@ form{
         flex-basis: 90%;
         margin-bottom: 5%;
     }
+    .modal{
+        position: fixed;
+        top: 30%;
+        left: 18%;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+        width: 70%;
+        height: 30%;
+        background-color: white;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.8s ease; /* Transição de opacidade */
+    }
     .sucesso>.campos{
         margin: 20% 10%;
     }
@@ -712,7 +726,20 @@ form{
         flex-basis: 75%;
         margin-bottom: 5%;
     }
-    
+    .modal{
+        position: fixed;
+        top: 30%;
+        left: 23%;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+        width: 60%;
+        height: 30%;
+        background-color: white;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.8s ease; /* Transição de opacidade */
+    }
     .sucesso>.campos{
         margin: 20% 10%;
     }
@@ -783,6 +810,20 @@ form{
     }
     .card{
         flex-basis: 45%;
+    }
+    .modal{
+        position: fixed;
+        top: 30%;
+        left: 30%;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+        width: 40%;
+        height: 30%;
+        background-color: white;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.8s ease; /* Transição de opacidade */
     }
     .sucesso>.campos{
         margin: 20% 10%;
@@ -870,6 +911,20 @@ form{
     .card{
         flex-basis: 45%;
     }
+    .modal{
+        position: fixed;
+        top: 30%;
+        left: 25%;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+        width: 50%;
+        height: 30%;
+        background-color: white;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.8s ease; /* Transição de opacidade */
+    }
     .sucesso>.campos{
         margin: 20% 10%;
     }
@@ -955,6 +1010,20 @@ form{
     }
     .card{
         flex-basis: 30%;
+    }
+    .modal{
+        position: fixed;
+        top: 30%;
+        left: 25%;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+        width: 40%;
+        height: 30%;
+        background-color: white;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.8s ease; /* Transição de opacidade */
     }
     .sucesso>.campos{
         margin: 20% 10%;
