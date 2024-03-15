@@ -1,29 +1,4 @@
 // Sessão Carrossel
-let touchStartX = 0;
-let touchEndX = 0;
-
-function handleTouchStart(event) {
-    touchStartX = event.touches[0].clientX;
-}
-
-function handleTouchEnd(event) {
-    touchEndX = event.changedTouches[0].clientX;
-    handleSwipe();
-}
-
-function handleSwipe() {
-    const threshold = 50; // Mínimo deslocamento horizontal necessário para reconhecer um swipe
-
-    const deltaX = touchEndX - touchStartX;
-    if (deltaX > threshold) {
-        // Swipe para a direita (avançar)
-        nextSlide();
-    } else if (deltaX < -threshold) {
-        // Swipe para a esquerda (retroceder)
-        prevSlide();
-    }
-}
-
 function changeSlide(index) {
     const slides = document.querySelectorAll('.slide');
     const slideWidth = slides[0].offsetWidth; // Largura de cada slide
@@ -33,12 +8,12 @@ function changeSlide(index) {
         slide.style.transform = `translateX(${distance}px)`; // Move o slide horizontalmente
     });
 
-    const buttons = document.querySelectorAll('.manual-btn');
-    buttons.forEach((button, i) => {
+    const marcas = document.querySelectorAll('.marca-slide');
+    marcas.forEach((marca, i) => {
         if (i === index) {
-            button.classList.add('active');
+            marca.classList.add('active');
         } else {
-            button.classList.remove('active');
+            marca.classList.remove('active');
         }
     });
 }
@@ -54,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Sessão Projetos
 const btn_abrir_modal1 = document.getElementById('btn-sinal');
-const btn_abrir_modal2 = document.getElementById('teste');
-const modalOverlay = document.getElementById('modal-overlay');
+const btn_abrir_modal2 = document.getElementById('btn-vick-count');
+const btn_abrir_modal3 = document.getElementById('btn-exercicios-modalgr');
 const modal1 = document.getElementById('modal1');
 const modal2 = document.getElementById('modal2');
+const modal3 = document.getElementById('modal3');
+const modalOverlay = document.getElementById('modal-overlay');
 const btn_close = document.querySelectorAll('.btn-close');
 const pagina = document.getElementById('pagina');
 let modalAberta = null; // Variável para rastrear qual modal está aberta
@@ -77,6 +54,13 @@ btn_abrir_modal2.onclick = function(){
     btn_abrir_modal2.blur();
 }
 
+btn_abrir_modal3.onclick = function(){
+    if (!fechandoModal && modalAberta !== modal3) { // Verifica se a modal não está sendo fechada e se a modal atual já não está aberta
+        abrirModal(modal3);
+    }
+    btn_abrir_modal3.blur();
+}
+
 // Função para abrir uma modal
 function abrirModal(modal) {
     modalOverlay.style.display = 'flex';
@@ -94,6 +78,10 @@ btn_close.forEach(button => {
         modalOverlay.style.opacity = '0'; // Define a opacidade para 0 antes de fechar o modal para aplicar a transição
         modal1.style.opacity = '0'; // Define a opacidade para 0 antes de fechar o modal para aplicar a transição
         modal2.style.opacity = '0';
+        modal3.style.opacity = '0';
+        modal1.style.pointerEvents = 'none';
+        modal2.style.pointerEvents = 'none';
+        modal3.style.pointerEvents = 'none';
         pagina.style.pointerEvents = 'auto';
         setTimeout(() => { 
             modalOverlay.style.display = 'none'; 

@@ -20,27 +20,35 @@
         
     <div class="container-pagina">
         <section class="sessao-certificados">
-            <h1 class="titulo-certificado">Meus Cerfificados</h1>
+            <h1 class="titulo-certificado">Meus Certificados</h1>
             <div class="slider">
                 <div class="slides">
                     <!--Radio Buttons-->
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
                     <!--Fim Radio Buttons-->
+
+                    <button class="arrow arrow-left" onclick="changeSlide(0)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="arrow arrow-right" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
         
                     <!--Slides-->
-                    <div class="slide" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)" ontouchend="handleTouchEnd(event)" onclick="changeSlide(1)">
+                    <div class="slide">
                         <img src="assets/bootcamp.PNG">
+                        
                     </div>
         
-                    <div class="slide" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)" ontouchend="handleTouchEnd(event)" onclick="changeSlide(0)">
+                    <div class="slide">
                         <img src="assets/orientacao-obj.PNG">
                     </div>
                     <!--Fim Slides-->
         
                     <div class="manual-navigation">
-                        <button class="manual-btn active" onclick="changeSlide(0)"></button>
-                        <button class="manual-btn" onclick="changeSlide(1)"></button>
+                        <button class="marca-slide active"></button>
+                        <button class="marca-slide"></button>
                     </div>
                 </div>
             </div>
