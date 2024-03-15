@@ -84,8 +84,7 @@ body{
 }
 .container img{
     text-align: center;
-    width: 30%;
-    height: 30%;
+    width: 25%;
     border-radius: 5%;
     transition: 0.5s;
 }
@@ -475,7 +474,7 @@ form{
     .container-pagina{
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex: 1;
         min-height: 100vh;
     }
@@ -585,8 +584,8 @@ form{
     .container-pagina{
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        min-height: 100vh;
+        justify-content: space-evenly;
+        min-height: 90vh;
     }
     .sessao-certificados{
         width: 100%;
@@ -703,6 +702,79 @@ form{
     .btn-download{
         width: 70%;
         padding: 15px 10px;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+    .titulo-experiencia{
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+    .card{
+        flex-basis: 45%;
+    }
+    .sucesso>.campos{
+        margin: 20% 10%;
+    }
+    .sucesso>.campos p{
+        margin: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+    .container{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    .container article{
+        margin-left: 0;
+    }
+    .container img{
+        width: 30%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-pagina{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        min-height: 60vh;
+    }
+    .sessao-certificados{
+        width: 100%;
+        height: 320px;
+        align-items: center;
+    }
+    .manual-navigation{
+        margin-top: -40%;
+    }
+    .titulo-certificado{
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+    .sessao-download{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .btn-download{
+        width: 60%;
+        padding: 20px 10px;
         text-align: center;
         font-size: 25px;
         border-radius: 20px;
