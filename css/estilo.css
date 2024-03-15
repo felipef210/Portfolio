@@ -254,6 +254,7 @@ body{
 .btn-projeto:hover{
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 .modal{
     position: fixed;
