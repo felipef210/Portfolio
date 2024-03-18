@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    min-height: 150vh;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -119,6 +119,9 @@ body{
 /*Fim Formatações Home*/
 
 /*Página Formação*/
+.certificados{
+    min-height: 150vh;
+}
 .titulo-certificado{
     width: 100%;
     text-align: center;
@@ -203,7 +206,7 @@ body{
     display: flex;
     justify-content: center;
     align-self: center;
-    margin-top: 30%;
+    margin-top: 50%;
 }
 .marca-slide{
     border: 2px solid black;
