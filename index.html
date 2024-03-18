@@ -17,13 +17,29 @@
             <li><a href="projetos.html"><i class="fa-solid fa-gear"></i>Projetos</a></li>
             <li><a href="contatos.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
         </ul>
+
+        <div class="mobile-nav-bar">
+            <div class="btn-mobile-menu">
+                <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <ul class="itens-mobile-nav-bar">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="certificados.html">Formação e Experiência</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </div>
     </nav>
-    <header class="cabecalho">
-        <h1>Felipe Miranda</h1>
-        <h3>Developer Jr.</h3>
-    </header>
+    
     <section class="container">
-        <img src="assets/eu.jpeg">
+        <div class="coluna-imagem">
+            <header class="cabecalho">
+                <h1>Felipe Miranda</h1>
+                <h3>Developer Jr.</h3>
+            </header>
+            <img src="assets/eu.jpeg">
+        </div>
+        
         <article>
             <h2 class="titulo">Um pouco sobre mim</h2>
             <p>
@@ -64,5 +80,6 @@
         </section>
         <p>Todos os direitos reservados &copy; 2023</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

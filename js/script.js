@@ -1,3 +1,19 @@
+// Menu Responsivo
+function menuShow() {
+    let menuMobile = document.querySelector('.itens-mobile-nav-bar');
+    if (menuMobile.style.display === 'none' || menuMobile.style.display === '') {
+        menuMobile.style.display = 'block';
+        menuMobile.style.animation = 'openMenu 0.6s forwards';
+    }
+    else {
+        menuMobile.style.animation = 'closeMenu 0.5s forwards'; // Aplica a animação de fechar
+        setTimeout(function() {
+            menuMobile.style.display = 'none';
+        }, 500);
+    }
+}
+// Fim Menu Responsivo
+
 // Sessão Carrossel
 function changeSlide(index) {
     const slides = document.querySelectorAll('.slide');
