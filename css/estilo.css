@@ -397,15 +397,12 @@ body{
 /*Fim Formatações Projetos*/
 
 /*Página Contatos*/
-.sucesso{
-    display: flex;
-}
 .sucesso>.campos{
-    margin: 0;
+    margin: 7% 35%;
     padding: 1%;
     display: flex;
-    flex: 1;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 .sucesso>.cabecalho{
