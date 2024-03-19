@@ -13,8 +13,23 @@ body{
     background-color: #fafafa;
     color: #202020;
 }
+
 .mobile-nav-bar{
     display: none;
+    color: white;
+}
+.mobile-nav-bar li{
+    text-align: center;
+}
+.mobile-nav-bar li:not(:last-child){
+    padding-bottom: 1rem;
+}
+.mobile-nav-bar li a{
+    color: white;
+    text-decoration: none;
+}
+.itens-mobile-nav-bar li i{
+    margin-right: 0.5rem 
 }
 .btn-mobile-menu{
     display: none;
@@ -554,16 +569,7 @@ form{
         display: none;
         opacity: 0;
         transition: opacity 0.6 ease;
-    }
-    .mobile-nav-bar li{
-        text-align: center;
-    }
-    .mobile-nav-bar li:not(:last-child){
-        padding-bottom: 1rem;
-    }
-    .mobile-nav-bar li a{
-        color: white;
-        text-decoration: none;
+        list-style: none;
     }
 }
 @media (max-width: 323px){

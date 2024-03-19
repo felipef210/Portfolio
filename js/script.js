@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
     changeSlide(0); // Altere para 0 se quiser começar com o primeiro slide
 
     // Adicione a classe 'active' ao botão correspondente ao slide inicial
-    // const initialButton = document.querySelector('.manual-btn:nth-child(1)'); // Altere para 1 se quiser começar com o primeiro slide
-    // initialButton.classList.add('active');
+    const initialButton = document.querySelector('.manual-btn:nth-child(1)'); // Altere para 1 se quiser começar com o primeiro slide
+    initialButton.classList.add('active');
 });
 // Fim Sessão Carrossel
 
