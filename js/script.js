@@ -14,8 +14,10 @@ function menuShow() {
 
     let btnIcon = document.getElementById('btn-menu').getElementsByTagName('i')[0];
     if (btnIcon.classList.contains('fa-bars')) {
-        btnIcon.classList.remove('fa-bars');
-        btnIcon.classList.add('fa-times');
+        setTimeout(function() {
+            btnIcon.classList.remove('fa-bars');
+            btnIcon.classList.add('fa-times');
+        }, 200);
     } 
     else {
         setTimeout(function() {
