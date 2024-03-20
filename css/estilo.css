@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 .mobile-nav-bar li:not(:last-child){
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 .mobile-nav-bar li a{
     color: white;
