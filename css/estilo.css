@@ -585,6 +585,9 @@ form{
         transition: opacity 0.6 ease;
         list-style: none;
     }
+    .sessao-download{
+        z-index: 100;
+    }
 }
 @media (max-width: 323px){
     html{
