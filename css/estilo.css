@@ -191,7 +191,9 @@ body::-webkit-scrollbar-thumb {
 }
 .arrow {
     position: absolute;
-    top: 16rem;
+    display: flex;
+    align-items: flex-end;
+    height: 80%;
     transform: translateY(-50%);
     font-size: 24px;
     color: #000;
@@ -640,7 +642,8 @@ form{
         margin-top: -10%;
     }
     .arrow{
-        top: 7rem;
+        height: 50%;
+        align-items: flex-end;
         margin: 0 2%;
     }
     .titulo-certificado{
@@ -756,8 +759,10 @@ form{
         margin-bottom: 5%;
     }
     .arrow{
-        top: 7rem;
-        margin: 0 5%;
+        height: 70%;
+        margin: 0 3%;
+        display: flex;
+        align-items: flex-end;
     }
     .manual-navigation{
         margin-top: 5rem;
@@ -857,19 +862,22 @@ form{
         align-items: center;
     }
     .manual-navigation{
-        margin-top: 50%;
+        margin-top: 10%;
     }
     .titulo-certificado{
         width: 100%;
         font-size: 25px;
         margin-bottom: 5%;
     }
+    .slider{
+        height: 40rem;
+    }
     .arrow{
-        top: 10rem;
+        height: 60%;
         margin: 0 5%;
     }
     .manual-navigation{
-        margin-top: 11rem;
+        
     }
     .sessao-download{
         margin-top: 20%;
@@ -934,7 +942,7 @@ form{
         min-height: 60vh;
     }
     .arrow{
-        top: 21%;
+        height: 50%;
         margin: 0 3%;
     }
     .sessao-certificados{
@@ -1019,7 +1027,7 @@ form{
         min-height: 60vh;
     }
     .arrow{
-        top: 26%;
+        height: 60%;
         margin: 0 3%;
     }
     .sessao-certificados{
