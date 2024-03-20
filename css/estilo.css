@@ -586,7 +586,7 @@ form{
         list-style: none;
     }
     .sessao-download{
-        z-index: 100;
+        z-index: 1;
     }
 }
 @media (max-width: 323px){
