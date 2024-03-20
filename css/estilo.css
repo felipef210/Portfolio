@@ -591,13 +591,6 @@ form{
     .slider{
         height: 25rem;
     }
-    .arrow{
-        top: 11rem;
-        margin: 0 5%;
-    }
-    .manual-navigation{
-        margin-top: 10rem;
-    }
 }
 @media (max-width: 323px){
     html{
@@ -644,7 +637,11 @@ form{
         margin-bottom: 5%;
     }
     .manual-navigation{
-        margin-top: -90%;
+        margin-top: -10%;
+    }
+    .arrow{
+        top: 7rem;
+        margin: 0 2%;
     }
     .titulo-certificado{
         width: 100%;
@@ -758,6 +755,13 @@ form{
         font-size: 25px;
         margin-bottom: 5%;
     }
+    .arrow{
+        top: 7rem;
+        margin: 0 5%;
+    }
+    .manual-navigation{
+        margin-top: 5rem;
+    }
     .sessao-download{
         width: 100%;
         height: auto;
@@ -859,6 +863,13 @@ form{
         width: 100%;
         font-size: 25px;
         margin-bottom: 5%;
+    }
+    .arrow{
+        top: 10rem;
+        margin: 0 5%;
+    }
+    .manual-navigation{
+        margin-top: 11rem;
     }
     .sessao-download{
         margin-top: 20%;
