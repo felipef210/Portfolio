@@ -13,8 +13,34 @@ body{
     background-color: #fafafa;
     color: #202020;
 }
+body::-webkit-scrollbar {
+    width: 15px;            
+}
+  
+body::-webkit-scrollbar-track {
+    background: #222;        
+}
+body::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border: solid black 2.5px;
+    border-radius: 15px;    
+}
 .mobile-nav-bar{
     display: none;
+    color: white;
+}
+.mobile-nav-bar li{
+    text-align: center;
+}
+.mobile-nav-bar li:not(:last-child){
+    padding-bottom: 1.5rem;
+}
+.mobile-nav-bar li a{
+    color: white;
+    text-decoration: none;
+}
+.itens-mobile-nav-bar li i{
+    margin-right: 0.5rem 
 }
 .btn-mobile-menu{
     display: none;
@@ -165,7 +191,9 @@ body{
 }
 .arrow {
     position: absolute;
-    top: 16rem;
+    display: flex;
+    align-items: flex-end;
+    height: 80%;
     transform: translateY(-50%);
     font-size: 24px;
     color: #000;
@@ -392,7 +420,7 @@ body{
 }
 .sucesso>.cabecalho{
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 5rem;
 }
 .sucesso>.campos p{
     text-align: center;
@@ -402,7 +430,7 @@ body{
     justify-content: center;
     align-items: flex-end;
     font-size: 1.1em;
-    width: 20%;
+    width: 10rem;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -414,7 +442,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0%;
+    padding: 1rem 0;
 }
 .sucesso>.rodape-contatos p{
     color: white;
@@ -447,7 +475,7 @@ form{
     width: 60%;
 }
 .campos button{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: black;
     color: white;
     height: 40px;
@@ -511,7 +539,7 @@ form{
 /*Fim Formatações Contatos*/
 
 /*Media Queries*/
-@media screen and (max-width: 730px){
+@media screen and (max-width: 767px){
     .overlay {
         position: fixed;
         top: 0;
@@ -557,16 +585,13 @@ form{
         display: none;
         opacity: 0;
         transition: opacity 0.6 ease;
+        list-style: none;
     }
-    .mobile-nav-bar li{
-        text-align: center;
+    .sessao-download{
+        z-index: 1;
     }
-    .mobile-nav-bar li:not(:last-child){
-        padding-bottom: 1rem;
-    }
-    .mobile-nav-bar li a{
-        color: white;
-        text-decoration: none;
+    .slider{
+        height: 25rem;
     }
 }
 @media (max-width: 323px){
@@ -614,10 +639,11 @@ form{
         margin-bottom: 5%;
     }
     .manual-navigation{
-        margin-top: -90%;
+        margin-top: -10%;
     }
     .arrow{
-        top: 15%;
+        height: 50%;
+        align-items: flex-end;
         margin: 0 2%;
     }
     .titulo-certificado{
@@ -727,17 +753,19 @@ form{
         height: 320px;
         align-items: center;
     }
-    .arrow{
-        top: 20%;
-        margin: 0 3%;
-    }
-    .manual-navigation{
-        margin-top: -25%;
-    }
     .titulo-certificado{
         width: 100%;
         font-size: 25px;
         margin-bottom: 5%;
+    }
+    .arrow{
+        height: 70%;
+        margin: 0 3%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .manual-navigation{
+        margin-top: 5rem;
     }
     .sessao-download{
         width: 100%;
@@ -837,12 +865,19 @@ form{
         align-items: center;
     }
     .manual-navigation{
-        margin-top: 50%;
+        margin-top: 10%;
     }
     .titulo-certificado{
         width: 100%;
         font-size: 25px;
         margin-bottom: 5%;
+    }
+    .slider{
+        height: 40rem;
+    }
+    .arrow{
+        height: 60%;
+        margin: 0 5%;
     }
     .sessao-download{
         margin-top: 20%;
@@ -907,7 +942,7 @@ form{
         min-height: 60vh;
     }
     .arrow{
-        top: 21%;
+        height: 50%;
         margin: 0 3%;
     }
     .sessao-certificados{
@@ -992,7 +1027,7 @@ form{
         min-height: 60vh;
     }
     .arrow{
-        top: 26%;
+        height: 60%;
         margin: 0 3%;
     }
     .sessao-certificados{

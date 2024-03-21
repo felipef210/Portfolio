@@ -11,6 +11,20 @@ function menuShow() {
             menuMobile.style.display = 'none';
         }, 500);
     }
+
+    let btnIcon = document.getElementById('btn-menu').getElementsByTagName('i')[0];
+    if (btnIcon.classList.contains('fa-bars')) {
+        setTimeout(function() {
+            btnIcon.classList.remove('fa-bars');
+            btnIcon.classList.add('fa-times');
+        }, 200);
+    } 
+    else {
+        setTimeout(function() {
+            btnIcon.classList.remove('fa-times');
+            btnIcon.classList.add('fa-bars');
+        }, 500);
+    }
 }
 // Fim Menu Responsivo
 
@@ -38,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     changeSlide(0); // Altere para 0 se quiser começar com o primeiro slide
 
     // Adicione a classe 'active' ao botão correspondente ao slide inicial
-    // const initialButton = document.querySelector('.manual-btn:nth-child(1)'); // Altere para 1 se quiser começar com o primeiro slide
-    // initialButton.classList.add('active');
+    const initialButton = document.querySelector('.manual-btn:nth-child(1)'); // Altere para 1 se quiser começar com o primeiro slide
+    initialButton.classList.add('active');
 });
 // Fim Sessão Carrossel
 
