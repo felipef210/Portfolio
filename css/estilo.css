@@ -704,7 +704,7 @@ form{
     }
     .container img{
         width: 70%;
-        margin-bottom: 5%;
+        margin-bottom: 1rem;
         border-radius: 5%;
         transition: 0.5s;
     }
@@ -816,6 +816,9 @@ form{
     .container article{
         margin-left: 0;
         margin-top: 0;
+    }
+    .container img{
+        margin-bottom: 1rem;
     }
     .cabecalho{
         display: flex;
