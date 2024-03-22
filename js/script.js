@@ -29,32 +29,33 @@ function menuShow() {
 // Fim Menu Responsivo
 
 // Sessão Carrossel
-function changeSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    const slideWidth = slides[0].offsetWidth; // Largura de cada slide
+let contador = 1;
+document.getElementById("radio1").checked = true;
 
-    slides.forEach((slide, i) => {
-        const distance = (i - index) * slideWidth; // Distância que o slide deve se mover
-        slide.style.transform = `translateX(${distance}px)`; // Move o slide horizontalmente
-    });
+setInterval(function(){
+    proxImagem()
+}, 8000)
 
-    const marcas = document.querySelectorAll('.marca-slide');
-    marcas.forEach((marca, i) => {
-        if (i === index) {
-            marca.classList.add('active');
-        } else {
-            marca.classList.remove('active');
-        }
-    });
+const proxImagem = () => {
+    contador++;
+    if (contador>2){
+        contador = 1
+    }
+    document.getElementById("radio1").checked = false;
+    document.getElementById("radio2").checked = false;
+    document.getElementById("radio"+contador).checked = true;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    changeSlide(0); // Altere para 0 se quiser começar com o primeiro slide
+let botao = document.querySelector(".botao")
+botao.addEventListener("click", () => {
+    botao.classList.add("active");
 
-    // Adicione a classe 'active' ao botão correspondente ao slide inicial
-    const initialButton = document.querySelector('.manual-btn:nth-child(1)'); // Altere para 1 se quiser começar com o primeiro slide
-    initialButton.classList.add('active');
-});
+    setTimeout(()=> {
+        botao.classList.remove("active");
+        document.querySelector("bx").classList.replace("bx-cloud-download", "bx-check-circle")
+        document.querySelector(".textoBotao").innerHTML = "Concluído"
+    }, 1000) //ms
+})
 // Fim Sessão Carrossel
 
 // Sessão Projetos

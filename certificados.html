@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="assets/f.png" type="icon">
 </head>
-<body class="certificados">
+<body class="opa">
     <nav>
         <ul class="nav-bar">
             <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
@@ -30,47 +30,39 @@
         </div>
     </nav>
         
-    <div class="container-pagina">
-        <section class="sessao-certificados">
-            <h1 class="titulo-certificado">Meus Certificados</h1>
-            <div class="slider">
+    <section class="secaoPrincipal">
+        <div class="certificados">
+            <h2>Principais Certificados</h2>
+            <div class="slider">        
                 <div class="slides">
-                    <!--Radio Buttons-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <!--Fim Radio Buttons-->
+                    <input type="radio" name="radioButton" id="radio1">
+                    <input type="radio" name="radioButton" id="radio2">            
 
-                    <button class="arrow arrow-left" onclick="changeSlide(0)">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="arrow arrow-right" onclick="changeSlide(1)">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-        
-                    <!--Slides-->
+                    <div class="primeiroSlide">
+                        <img src="/assets/bootcamp.PNG" alt="Certificado de Conclusão do Bootcamp em .NET">
+                    </div>
                     <div class="slide">
-                        <img src="assets/bootcamp.PNG">
-                        
+                        <img src="assets/orientacao-obj.PNG" alt="Certificado de Conclusão do Curso Orientação a Objetos">
                     </div>
-        
-                    <div class="slide">
-                        <img src="assets/orientacao-obj.PNG">
+
+                    <div class="navegacaoAuto">
+                        <div class="autoBtn1"></div>
+                        <div class="autoBtn2"></div>
                     </div>
-                    <!--Fim Slides-->
-        
-                    <div class="manual-navigation">
-                        <button class="marca-slide active"></button>
-                        <button class="marca-slide"></button>
-                    </div>
+
+                </div>
+
+                <div class="navegacaoManual">
+                    <label for="radio1" class="manualBtn"></label>
+                    <label for="radio2" class="manualBtn"></label>
                 </div>
             </div>
-        </section>
-
-        <section class="sessao-download">
+        </div>
+        <div class="sessao-download">
             <h1 class="titulo-experiencia">Experiência Profissional</h1>
             <a class="btn-download" href="assets/Curriculo_Felipe_Miranda.pdf" download="Curriculo_Felipe_Miranda"><i class="fa-solid fa-cloud-arrow-down"></i>Download CV</a>
-        </section>
-    </div>
+        </div>
+    </section>
     
     
     <footer class="rodape-contatos">
