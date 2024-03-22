@@ -601,6 +601,7 @@ form{
     }
     .navegacaoManual{
         margin-top: -17vh;
+        z-index: 1;
     }
     .navegacaoAuto{
         margin-top: 33vh;
