@@ -5,6 +5,7 @@ const btn_abrir_modal3 = document.getElementById('btn-exercicios-modalgr');
 const modal1 = document.getElementById('modal1');
 const modal2 = document.getElementById('modal2');
 const modal3 = document.getElementById('modal3');
+let modais = [modal1, modal2, modal3];
 const modalOverlay = document.getElementById('modal-overlay');
 const btn_close = document.querySelectorAll('.btn-close');
 const pagina = document.getElementById('pagina');
@@ -39,12 +40,11 @@ btn_close.forEach(button => {
     button.addEventListener('click', () => {
         fechandoModal = true; // Define a variável de controle para indicar que uma modal está sendo fechada
         modalOverlay.style.opacity = '0'; // Define a opacidade para 0 antes de fechar o modal para aplicar a transição
-        modal1.style.opacity = '0'; // Define a opacidade para 0 antes de fechar o modal para aplicar a transição
-        modal2.style.opacity = '0';
-        modal3.style.opacity = '0';
-        modal1.style.pointerEvents = 'none';
-        modal2.style.pointerEvents = 'none';
-        modal3.style.pointerEvents = 'none';
+        for (let i = 0; i < modais.length; i++) {
+            modais[i].style.opacity = '0';            
+            modais[i].style.pointerEvents = 'none';
+        }
+        
         pagina.style.pointerEvents = 'auto';
         setTimeout(() => { 
             modalOverlay.style.display = 'none'; 
