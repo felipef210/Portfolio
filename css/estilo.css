@@ -584,6 +584,16 @@ form{
         transition: opacity 0.6 ease;
         list-style: none;
     }
+    .itens-habilidades{
+        flex-direction: column;
+    }
+    .item-habilidades:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    .icones-linguagens{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
     .certificados{
         margin: 0;
         width: 100%;
@@ -810,6 +820,19 @@ form{
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 5%;
+    }
+    .itens-habilidades{
+        flex-wrap: wrap;
+    }
+    .item-habilidades{
+        flex-basis: 50%;
+    }
+    .item-habilidades:last-child{
+        margin-top: 2rem;
+    }
+    .icones-linguagens{
+        width: 3rem;
+        height: 2rem;
     }
     .secaoPrincipal{
         flex-flow: row wrap;
