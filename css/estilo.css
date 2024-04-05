@@ -586,6 +586,7 @@ form{
     }
     .itens-habilidades{
         flex-direction: column;
+        margin-right: 1.5rem;
     }
     .item-habilidades:not(:last-child){
         margin-bottom: 3rem;
@@ -825,7 +826,7 @@ form{
         flex-wrap: wrap;
     }
     .item-habilidades{
-        flex-basis: 50%;
+        flex-basis: 48%;
     }
     .item-habilidades:last-child{
         margin-top: 2rem;
