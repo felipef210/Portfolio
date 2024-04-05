@@ -153,87 +153,54 @@ body::-webkit-scrollbar-thumb {
     margin: 5vh 2vw;
     overflow: hidden;
 }
+.certificados{
+    width: 50%;
+}
 .certificados h2{
     margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
 }
-.slider{
-    margin: 0 auto;
-    width: 45vw;
-    height: 72vh;
+.carousel {
+    width: 100%;
     overflow: hidden;
-    min-width: 750px;
-}
-.slides{
-    width: 400%;
-    height: 72vh;
+} 
+.carousel-inner {
     display: flex;
-    }
-.slides input{
+    transition: transform 0.5s ease;
+} 
+.carousel-item {
+    flex: 0 0 100%;
+    position: relative; /* Garante que os botões de rádio fiquem dentro da região da imagem */
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.carousel-inner input {
     display: none;
 }
-.slide{
-    width: 25%;
-    position: relative;
+.radio-buttons {
+    width: 100%;
+    text-align: center;
+     /* Centraliza os botões de rádio horizontalmente */
 }
-.primeiroSlide{
-    transition: 500ms;   
-}
-.slide img, .primeiroSlide img{
-    width: 45vw;
-    height: 72vh; 
-    min-width: 750px;   
-}
-.navegacaoManual{
-    position: absolute;
-    width: 45vw;
-    min-width: 750px;
-    margin-top: -6vh;
-    display: flex;
-    justify-content: center;
-}
-.manualBtn{
-    border: 2px solid #FE7A00;
-    padding: 5px;
-    border-radius: 10px; 
+.radio-buttons label {
+    margin: 0 5px;
     cursor: pointer;
-    transition: 500ms;
-    opacity: 0;
 }
-.manualBtn:not(:last-child){
-    margin-right: 40px;
+.radio-buttons label input[type="radio"] {
+    display: none;
 }
-.manualBtn:hover{
-    background-color: #FE7A00;
-}
-#radio1:checked ~ .primeiroSlide{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .primeiroSlide{
-    margin-left: -25%;
-}
-.navegacaoAuto div{
+.radio-buttons label span {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: white;
     border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 500ms;
-}
-.navegacaoAuto{
-    position: absolute;
-    width: 45vw;
-    min-width: 750px;
-    margin-top: 66vh;
-    display: flex;
-    justify-content: center;  
-}
-.navegacaoAuto div:not(:last-child){
-    margin-right: 40px;
-}
-#radio1:checked ~ .navegacaoAuto .autoBtn1{
-    background-color: black;
-}
-#radio2:checked ~ .navegacaoAuto .autoBtn2{
+    border-radius: 50%;
+} 
+.radio-buttons label input[type="radio"]:checked + span {
     background-color: black;
 }
 .sessao-download{
@@ -576,40 +543,18 @@ form{
     }
     .certificados{
         margin: 0;
+        width: 100%;
     }
     .secaoPrincipal{
         flex-flow: column wrap;
         justify-content: space-around;
-        margin: 2vh 0;
-    }
-    .slides{
-        height: 50vh;
-    }
-    .slider{
-        height: 39vh;
-        width: 100vw;
-        min-width: 0;
-    }
-    .slide img, .primeiroSlide img{
-        width: 100vw;
-        height: auto;
-        min-width: 0;
-    }
-    .navegacaoManual, .navegacaoAuto{
-        width: 100vw;
-        min-width: 0;
-    }
-    .navegacaoManual{
-        margin-top: -17vh;
-        z-index: 1;
-    }
-    .navegacaoAuto{
-        margin-top: 33vh;
+        margin: 5vh 5vw;
     }
     .sessao-download{
         width: 100%;
         gap: 0;
         justify-content: center;
+        margin-top: 5vh;
     }
     .btn-download{
         width: 80%;
@@ -788,17 +733,6 @@ form{
         flex-direction: column;
         align-items: center;
     }
-    .slider{
-        height: 60vh;
-        width: 100vw;
-        min-width: 0;
-    }
-    .navegacaoAuto{
-        margin-top: 45vh;
-    }
-    .sessao-download{
-        margin-top: 2rem;
-    }
     .card{
         flex-basis: 45%;
     }
@@ -835,19 +769,22 @@ form{
         margin-bottom: 5%;
     }
     .secaoPrincipal{
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: space-around;
-        margin: 2vh 0;
+        
+    }
+    .certificados{
+        width: 50%;
     }
     .sessao-download{
-        width: 100%;
+        width: 50%;
         gap: 0;
-        justify-content: center;
-        margin-top: 3rem;
     }
     .btn-download{
-        margin-top: 2rem;
-        width: 50%;
+        margin-top: 6rem;
+        width: 55%;
+        height: 5%;
+        font-size: 24px;
     }
     .card{
         flex-basis: 45%;
