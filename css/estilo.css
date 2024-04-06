@@ -162,12 +162,14 @@ body::-webkit-scrollbar-thumb {
 }
 .itens-habilidades{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
 .item-habilidades{
     display: flex;
     flex-basis: 30%;
+    margin-bottom: 2rem;
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 1s ease, transform 1s ease;
@@ -585,6 +587,7 @@ form{
         list-style: none;
     }
     .itens-habilidades{
+        flex-wrap: nowrap;
         flex-direction: column;
         margin-right: 1.5rem;
     }
@@ -827,9 +830,6 @@ form{
     }
     .item-habilidades{
         flex-basis: 48%;
-    }
-    .item-habilidades:last-child{
-        margin-top: 2rem;
     }
     .icones-linguagens{
         width: 3rem;
