@@ -358,7 +358,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 30px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
     width: 25%;
-    height: 20%;
+    padding-bottom: 2em;
     background-color: white;
     z-index: 10000;
     opacity: 0;
@@ -755,7 +755,6 @@ form{
         border-radius: 30px;
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
         width: 60%;
-        height: 30%;
         background-color: white;
         z-index: 10000;
         opacity: 0;
@@ -801,7 +800,6 @@ form{
         border-radius: 30px;
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
         width: 40%;
-        height: 30%;
         background-color: white;
         z-index: 10000;
         opacity: 0;
@@ -864,7 +862,6 @@ form{
         border-radius: 30px;
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
         width: 50%;
-        height: 30%;
         background-color: white;
         z-index: 10000;
         opacity: 0;
@@ -905,7 +902,6 @@ form{
         border-radius: 30px;
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
         width: 40%;
-        height: 30%;
         background-color: white;
         z-index: 10000;
         opacity: 0;
